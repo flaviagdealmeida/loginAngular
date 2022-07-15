@@ -1,0 +1,35 @@
+<body>
+    <div class="row m-0 h-100">
+        <div class="col p-0 text-center d-flex justify-content-center align-items-center display-none">
+            <img src="../../assets/img/login.svg" class="w-100">
+        </div>
+        <div class="col p-0 bg-custom d-flex justify-content-center align-items-center flex-column w-100">
+            <form class="w-75" #loginForm="ngForm" (submit)="onSubmit();">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username" [(ngModel)]="username" id="exampleFormControlInput1" placeholder="username"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2"  class="form-label">Password</label>
+                    <input type="text" class="form-control" name="password" [(ngModel)]="password" id="exampleFormControlInput2" placeholder="password"
+                        required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Keep me logged in
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <button type="submit" class="btn btn-custom btn-lg btn-block mt-3">Sign In</button>
+                <button type="button" routerLink="/clientes" class="btn btn-warning btn-lg btn-block mt-3">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
