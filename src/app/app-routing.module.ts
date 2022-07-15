@@ -13,6 +13,7 @@ const routes: Routes = [
     {path:'', component:LayoutComponent, children:[
       {path:'home', component:HomeComponent},
       {path:'conteudo', component:ConteudoComponent},
+      {path:'clientes', component:ClienteFormComponent},
       {path:'**', component:Erro404Component},
 
       

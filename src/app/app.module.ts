@@ -13,6 +13,7 @@ import { ClienteListaComponent } from './cliente/cliente-lista/cliente-lista.com
 import { TemplateModule } from './template/template.module';
 import { ClientesRoutingModule } from './cliente/clientes-routing.module';
 import { Erro404Component } from './erro404/erro404.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { Erro404Component } from './erro404/erro404.component';
     BrowserModule,
     FormsModule,
     TemplateModule,
+    RouterModule,
 
     ClientesRoutingModule,
     AppRoutingModule,

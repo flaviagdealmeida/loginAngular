@@ -5,12 +5,11 @@ import { ClienteFormComponent } from './cliente-form/cliente-form.component';
 import { ClienteListaComponent } from './cliente-lista/cliente-lista.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/clientes/lista', pathMatch: 'full'},
-  
   {path: 'clientes', component:LayoutComponent, children:[
     {path: 'form', component:ClienteFormComponent },
     {path: 'form/:id', component:ClienteFormComponent },
     {path: 'lista', component:ClienteListaComponent },
+    {path: '', redirectTo: '/clientes/lista', pathMatch: 'full'}
 
   ]}
 ]
